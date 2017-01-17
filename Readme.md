@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Таня Капусткина](https://up.htmlacademy.ru/htmlcss/16/user/345249).
-* Наставник: `Неизвестно`.
+* Наставник: [Катерина Шелег](https://htmlacademy.ru/profile/katesheleh).
 
 ---
 
