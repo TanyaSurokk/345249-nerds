@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Магазин готовых шаблонов</title>
+    <link href="style.css" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="container">
+        <nav class="main-menu">
+          <div class="header-logo">
+            <a class="main-logo" href="index.html">
+            <img src="http://placehold.it/130x50" alt="Nёrd's" width="130" height="50">
+            </a>
+          </div>
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li class="active"> <!--Надо ли добавлять открытому разделу class active?-->
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+          <div class="basket-block">
+            <a class="basket" href="#">Корзина</a>
+          </div>
+        </nav>
+        <div class="header-title">
+          Магазин готовых шаблонов
+        </div>
+      </div>
+    </header>
+    <main class="container">
+      <div class="index-content-left">
+        <form action="#" method="post">
+          <fieldset class="filter-price">
+            <legend>Стоимость:</legend>
+              <div class="range"> <!--Нашла похожее задание в одном из курсов-->
+                <div class="scale"><div style="width:100px;" class="bar"></div></div>
+                <div class="toggle min-toggle"></div>
+                <div class="toggle max-toggle"></div>
+              </div>
+              <div class="range-fields">
+                <label>
+                  от<input type="text" id="min-cost" value="0">
+                </label>
+                <label>
+                  до<input type="text" id="max-cost" value="15 000">
+                </label>
+              </div>
+          </fieldset>
+          <fieldset class="filter-box">
+            <legend>Сетка:</legend>
+              <input type="radio" name="filter1" value="adaptive" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label>
+
+              <input type="radio" name="filter1" value="fixed" id="fixed">
+              <label for="fixed">Фиксированная</label>
+
+              <input type="radio" name="filter1" value="rubber" id="rubber">
+              <label for="rubber">Резиновая</label>
+          </fieldset>
+          <fieldset class="filter-box">
+            <legend>Особенности:</legend>
+              <input type="checkbox" name="slider" id="slider" checked>
+              <label for="slider">Слайдер</label>
+
+              <input type="checkbox" name="advantages" id="advantages">
+              <label for="advantages">Блок преимуществ</label>
+
+              <input type="checkbox" name="news" id="news" checked>
+              <label for="news">Новости</label>
+
+              <input type="checkbox" name="gallery" id="gallery">
+              <label for="gallery">Галерея</label>
+
+              <input type="checkbox" name="basket" id="basket">
+              <label for="basket">Корзина</label>
+          </fieldset>
+          <input type="submit" class="btn btn-gray" value="Показать">
+        </form>
+      </div>
+      <div class="index-content-right">
+        <div class="catalog-sorting">
+          <span>Сортировать:</span>
+          <span class="sorting-criteria">по цене</span>
+          <a class="sorting-criteria" href="#">по типу</a>
+          <a class="sorting-criteria" href="#">по названию</a>
+          <div class="up-down">
+            <span class="arrow-down active"></span>
+            <span class="arrow-up"></span>
+          </div>
+        </div>
+        <div class="catalog-items">
+          <div class="catalog-item">
+            <img src="http://placehold.it/150x200" alt="Sedona" width="150" height="200">
+            <div class="description">
+              <a class="description-title" href="#">Sedona</a> <!--Здесь должно открываться модальное окно с демонстрацией товара-->
+              <div class="description-text">Информационный сайт для туристов</div>
+              <a class="btn btn-red" href="#">9900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="http://placehold.it/150x200" alt="Pink app" width="150" height="200">
+            <div class="description">
+              <a class="description-title" href="#">Pink app</a>
+              <div class="description-text">Продуктовый лендинг приложения для iOS и Android</div>
+              <a class="btn btn-red" href="#">9900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="http://placehold.it/150x200" alt="Barbershop" width="150" height="200">
+            <div class="description">
+              <a class="description-title" href="#">Barbershop</a>
+              <div class="description-text">Сайт салона красоты. Для мужчин, да.</div>
+              <a class="btn btn-red" href="#">9900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="http://placehold.it/150x200" alt="Mishka" width="150" height="200">
+            <div class="description">
+              <a class="description-title" href="#">Mishka</a>
+              <div class="description-text">Интернет-магазин вязаных игрушек</div>
+              <a class="btn btn-red" href="#">9900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="http://placehold.it/150x200" alt="A plus" width="150" height="200">
+            <div class="description">
+              <a class="description-title" href="#">A plus</a>
+              <div class="description-text">Лендинг курсов повышения квалификации</div>
+              <a class="btn btn-red" href="#">9900 руб.</a>
+            </div>
+          </div>
+          <div class="catalog-item">
+            <img src="http://placehold.it/150x200" alt="Кваст" width="150" height="200">
+            <div class="description">
+              <a class="description-title" href="#">Кваст</a>
+              <div class="description-text">Промо-сайт производителя крафтового кваса</div>
+              <a class="btn btn-red" href="#">9900 руб.</a>
+            </div>
+          </div>
+        </div>
+        <div class="paginator">
+          <span class="btn btn-gray">1</span>
+          <a class="btn btn-gray" href="#">2</a>
+          <a class="btn btn-gray" href="#">3</a>
+          <a class="btn btn-gray" href="#">Следующая</a>
+        </div>
+      </div>
+    </main>
+       <footer class="page-footer">
+         <div class="container">
+           <section class="map-and-contacts">
+             <div class="map-image" id="map-image">
+               <img src="http://placehold.it/1000x400" alt="Карта" width="1000" height="400"> <!--Как подключать карту через script?-->
+             </div>
+             <div class="contacts">
+               <p><b>NЁRDS DESIGN STUDIO</b></p>
+               <p>191186, Санкт-Петербург,<br>
+               ул. Б. Конюшенная, д. 19/8</p>
+               <p>тел. +7 (812) 275-75-75</p>
+               <a class="btn btn-red #feedback" href="#">Напишите нам</a>
+             </div>
+             <div class="overlay" title="feedback"> <!--Не знаю, как правильно делать модальное окно и кнопку его закрытия-->
+               <div class="popup">
+               <button class="close" title="Закрыть"></button>
+               <p>Напишите нам</p>
+               <form action="#" method="post"> 
+                 <div class="half-width">
+                   <label for="your-name">Ваше имя:</label>
+                   <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
+                 </div>
+                 <div class="half-width">
+                   <label for="email">Ваш email:</label>
+                   <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+                 </div>
+                 <label for="text">Текст письма:</label>
+                 <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
+                 <input class="btn btn-red" type="submit" value="Отправить">
+               </form>
+               </div>
+             </div>
+           </section>
+           <section class="footer-social">
+             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+             <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
+            </section>
+            <div class="footer-text">
+              <p><b>Давайте дружить, это выгодно!</b></p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+         </div>
+       </footer>
+  </body>
+</html>
