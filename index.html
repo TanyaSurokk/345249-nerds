@@ -8,13 +8,13 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-menu">
+        <nav class="nav-menu">
           <div class="header-logo">
-            <a class="main-logo" href="index.html">
-            <img src="http://placehold.it/130x50" alt="Nёrd's" width="130" height="50">
+            <a class="main-logo">
+              <img src="http://placehold.it/130x50" alt="Nёrd's" width="130" height="50">
             </a>
           </div>
-          <ul>
+          <ul class="main-menu">
             <li>
               <a href="#">Студия</a>
             </li>
@@ -32,42 +32,37 @@
             <a class="basket" href="#">Корзина</a>
           </div>
         </nav>
-        <div class="slider"> <!--Как правильно делать слайдер?-->
-            <input id="slide-1" type="radio" name="slide" value="slide-1" checked>
-            <label for="slide-1"></label>
+        <div class="slider"> 
 
-            <div class="current-slide">
-              <img src="http://placehold.it/300x150" alt="slide1">
-              <div class="slider-text">
-                <b class="slider-name">Долго, дорого, скурпулезно.</b>
-                <p>Математически выверенный дизайн для вашего сайта или мобильного приложения.</p> 
-                <a class="btn btn-red" href="#">Узнать больше</a>
-              </div>
+          <input id="slide-1" type="radio" name="slide" value="slide-1" checked>
+          <label for="slide-1"></label>
+          <div class="current-slide">
+            <div class="slider-text">
+              <h4 class="slider-name">Долго, дорого, скурпулезно.</h4>
+              <p class="slider-caption">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p> 
+              <a class="btn btn-red" href="#">Узнать больше</a>
             </div>
-
-            <input id="slide-2" type="radio" name="slide" value="slide-2">
-            <label for="slide-2"></label>
-
-            <div class="slide2">
-              <img src="http://placehold.it/300x150" alt="slide2">
-              <div class="slider-text">
-                <b class="slider-name">Любим математику, как никто другой</b>
-                <p>Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-                <a class="btn btn-red" href="#">Узнать больше</a>
-              </div>
+          </div>
+ 
+          <input id="slide-2" type="radio" name="slide" value="slide-2">
+          <label for="slide-2"></label>
+          <div class="slide2">
+            <div class="slider-text">
+              <h4 class="slider-name">Любим математику, как никто другой</h4>
+              <p class="slider-caption">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a class="btn btn-red" href="#">Узнать больше</a>
             </div>
+          </div>
 
-            <input id="slide-3" type="radio" name="slide" value="slide-3">
-            <label for="slide-3"></label>
-
-            <div class="slide3">
-              <img src="http://placehold.it/300x150" alt="slide3">
-              <div class="slide-text">
-                <b class="slider-name">Только ночь, только хардкор</b>
-                <p>Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-                <a class="btn btn-red" href="#">Узнать больше</a>
-              </div>
+          <input id="slide-3" type="radio" name="slide" value="slide-3">
+          <label for="slide-3"></label>
+          <div class="slide3">
+            <div class="slide-text">
+              <h4 class="slider-name">Только ночь, только хардкор</h4>
+              <p class="slide-caption">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a class="btn btn-red" href="#">Узнать больше</a>
             </div>
+          </div>
         </div>
       </div>
     </header>
@@ -75,32 +70,29 @@
       <section class="features">
         <div class="features-item">
           <img src="http://placehold.it/250x120" width="250" height="120" alt="Веб-сайты">
-          <h2>Веб-сайты</h2>
-          <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+          <h2 class="features-name">Веб-сайты</h2>
+          <p class="features-description">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
           <a class="btn btn-red" href="#">Заказать</a>
         </div>
         <div class="features-item">
           <img src="http://placehold.it/250x120" width="250" height="120" alt="Приложения">
-          <h2>Приложения</h2>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <h2 class="features-name">Приложения</h2>
+          <p class="features-description">Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn btn-green" href="#">Заказать</a>
         </div>
         <div class="features-item">
           <img src="http://placehold.it/250x120" width="250" height="120" alt="Презентации">
-          <h2>Презентации</h2>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <h2 class="features-name">Презентации</h2>
+          <p class="features-description">Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn btn-yellow" href="#">Заказать</a>
         </div>
       </section>
-
-      <hr>
-
       <div class="index-content">
         <div class="index-content-left">
-          <p><b>Мы - маленькая, но гордая дизайн-студия из Краснодара</b></p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <h1 class="about-us">Мы - маленькая, но гордая дизайн-студия из Краснодара</h1>
+          <p class="our-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <div class="orders-list">
-            <p><b>Выполняем заказы на разработку:</b></p>
+            <h4 class="heading">Выполняем заказы на разработку:</h4>
             <ul class="orders-list-items">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для IOS и Android</li>
@@ -108,82 +100,79 @@
             </ul>
           </div>
          </div>
-        <figure class="index-content-right">
-           <img src="http://placehold.it/250x100" alt="Nёrd's logo" width="250" height="100">
-           <figcaption>
-             <p>С 2004 года любим точность во всем:</p>
-               <table class="advantages"> 
-                 <tr>
-                   <th>146<sup>%</sup></th>
-                   <th>100<sup>%</sup></th>
-                   <th>50<sup>%</sup></th>
-                 </tr>
-                 <tr>
-                   <td>Уровень самоотдачи</td>
-                   <td>Соблюдение сроков</td>
-                   <td>Минимальная предоплата</td>
-                 </tr>
-               </table> 
-             </figcaption>
-           </figure>
+        <div class="index-content-right">
+          <div class="Nerds-logo">
+            <img src="http://placehold.it/250x100" alt="Nёrd's logo" width="250" height="100">
+          </div>
+          <h4 class="heading">С 2004 года любим точность во всем:</h4>
+          <ul class="advantages"> 
+            <li>
+              <div class="percent">146<sup>%</sup></div>
+              <div class="advantage-name">Уровень самоотдачи</div>
+            </li>            
+            <li>
+              <div class="percent">100<sup>%</sup></div>
+              <div class="advantage-name">Соблюдение сроков</div>
+            </li>
+            <li>
+              <div class="percent">50<sup>%</sup></div>
+              <div class="advantage-name">Минимальная предоплата</div>
+            </li>
+           </ul> 
          </div>
-
-         <hr>
-
          <div class="partners-row">
            <div class="partner">
              <a class="partner" href="#">
-             <img src="http://placehold.it/200x50" alt="HTMLAcademy" width="200" height="50">
+               <img src="http://placehold.it/200x50" alt="HTMLAcademy" width="200" height="50">
              </a>
            </div>
            <div class="partner">
              <a class="partner" href="#">
-             <img src="http://placehold.it/200x50" alt="Barbershop Borodinski" width="200" height="50">
+               <img src="http://placehold.it/200x50" alt="Barbershop Borodinski" width="200" height="50">
              </a>
            </div>
            <div class="partner">
              <a class="partner" href="#">
-             <img src="src=http://placehold.it/200x50" alt="Pink" width="200" height="50">
+               <img src="src=http://placehold.it/200x50" alt="Pink" width="200" height="50">
              </a>
            </div>
            <div class="partner">
-           <a class="partner" href="#">
-           <img src="http://placehold.it/200x50" alt="Mishka" width="200" height="50">
-           </a>
+             <a class="partner" href="#">
+               <img src="http://placehold.it/200x50" alt="Mishka" width="200" height="50">
+             </a>
            </div>
          </div>
-         <hr>
        </main>
        <footer class="page-footer">
          <div class="container">
-           <section class="map-and-contacts">
+           <section class="coordinates">
              <div class="map-image" id="map-image">
-               <img src="http://placehold.it/1000x400" alt="Карта" width="1000" height="400"> <!--Как подключать карту через script?-->
+               <img src="http://placehold.it/1000x400" alt="Карта" width="1000" height="400">
              </div>
              <div class="contacts">
-               <p><b>NЁRDS DESIGN STUDIO</b></p>
+               <h4 class="heading">NЁRDS DESIGN STUDIO</h4>
                <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8</p>
                <p>тел. +7 (812) 275-75-75</p>
-               <a class="btn btn-red #feedback" href="#">Напишите нам</a>
+               <a class="btn btn-red" href="#">Напишите нам</a>
              </div>
-             <div class="overlay" title="feedback"> <!--Не знаю, как правильно делать модальное окно и кнопку его закрытия-->
+             <div class="overlay"> 
                <div class="popup">
-               <button class="close" title="Закрыть"></button>
-               <p>Напишите нам</p>
-               <form action="#" method="post"> 
-                 <div class="half-width">
-                   <label for="your-name">Ваше имя:</label>
-                   <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
-                 </div>
-                 <div class="half-width">
-                   <label for="email">Ваш email:</label>
-                   <input type="text" name="email" id="email" placeholder="Для отправки ответа">
-                 </div>
-                 <label for="text">Текст письма:</label>
-                 <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
-                 <input class="btn btn-red" type="submit" value="Отправить">
-               </form>
+                 <button class="close" title="Закрыть"></button>
+                 <p>Напишите нам</p>
+                 <form action="#" method="post"> 
+                   <div class="half-width">
+                     <label for="your-name">Ваше имя:</label>
+                     <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
+                   </div>
+                   <div class="half-width">
+                     <label for="email">Ваш email:</label>
+                     <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+                   </div>
+                   <label for="text">Текст письма:</label>
+                   <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
+                   <input class="btn btn-red" type="submit" value="Отправить">
+                 </form>
                </div>
              </div>
            </section>
@@ -193,8 +182,8 @@
              <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
             </section>
             <div class="footer-text">
-              <p><b>Давайте дружить, это выгодно!</b></p>
-              <p>Скидка 10% для друзей из социальных сетей.</p>
+              <p class="cooperation">Давайте дружить, это выгодно!</p>
+              <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
             </div>
          </div>
        </footer>
