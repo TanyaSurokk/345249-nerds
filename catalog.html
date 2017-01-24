@@ -8,21 +8,21 @@
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-menu">
+        <nav class="nav-menu">
           <div class="header-logo">
             <a class="main-logo" href="index.html">
-            <img src="http://placehold.it/130x50" alt="Nёrd's" width="130" height="50">
+              <img src="http://placehold.it/130x50" alt="Nёrd's" width="130" height="50">
             </a>
           </div>
-          <ul>
+          <ul class="main-menu">
             <li>
               <a href="#">Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
             </li>
-            <li class="active"> <!--Надо ли добавлять открытому разделу class active?-->
-              <a href="#">Магазин</a>
+            <li>
+              <a class="active">Магазин</a>
             </li>
             <li>
               <a href="#">Контакты</a>
@@ -41,59 +41,59 @@
       <div class="index-content-left">
         <form action="#" method="post">
           <fieldset class="filter-price">
-            <legend>Стоимость:</legend>
-              <div class="range"> <!--Нашла похожее задание в одном из курсов-->
-                <div class="scale"><div style="width:100px;" class="bar"></div></div>
-                <div class="toggle min-toggle"></div>
-                <div class="toggle max-toggle"></div>
-              </div>
-              <div class="range-fields">
-                <label>
-                  от<input type="text" id="min-cost" value="0">
-                </label>
-                <label>
-                  до<input type="text" id="max-cost" value="15 000">
-                </label>
-              </div>
+            <legend class="heading">Стоимость:</legend>
+            <div class="range"> 
+              <div class="scale"><div style="width:100px;" class="bar"></div></div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="range-fields">
+              <label>
+              от<input type="text" id="min-cost" value="0">
+              </label>
+              <label>
+              до<input type="text" id="max-cost" value="15 000">
+              </label>
+            </div>
           </fieldset>
           <fieldset class="filter-box">
-            <legend>Сетка:</legend>
-              <input type="radio" name="filter1" value="adaptive" id="adaptive" checked>
-              <label for="adaptive">Адаптивная</label>
+            <legend class="heading">Сетка:</legend>
+            <input type="radio" name="filter1" value="adaptive" id="adaptive" checked>
+            <label for="adaptive">Адаптивная</label>
 
-              <input type="radio" name="filter1" value="fixed" id="fixed">
-              <label for="fixed">Фиксированная</label>
+            <input type="radio" name="filter1" value="fixed" id="fixed">
+            <label for="fixed">Фиксированная</label>
 
-              <input type="radio" name="filter1" value="rubber" id="rubber">
-              <label for="rubber">Резиновая</label>
+            <input type="radio" name="filter1" value="rubber" id="rubber">
+            <label for="rubber">Резиновая</label>
           </fieldset>
           <fieldset class="filter-box">
-            <legend>Особенности:</legend>
-              <input type="checkbox" name="slider" id="slider" checked>
-              <label for="slider">Слайдер</label>
+            <legend class="heading">Особенности:</legend>
+            <input type="checkbox" name="slider" id="slider" checked>
+            <label for="slider">Слайдер</label>
 
-              <input type="checkbox" name="advantages" id="advantages">
-              <label for="advantages">Блок преимуществ</label>
+            <input type="checkbox" name="advantages" id="advantages">
+            <label for="advantages">Блок преимуществ</label>
 
-              <input type="checkbox" name="news" id="news" checked>
-              <label for="news">Новости</label>
+            <input type="checkbox" name="news" id="news" checked>
+            <label for="news">Новости</label>
 
-              <input type="checkbox" name="gallery" id="gallery">
-              <label for="gallery">Галерея</label>
+            <input type="checkbox" name="gallery" id="gallery">
+            <label for="gallery">Галерея</label>
 
-              <input type="checkbox" name="basket" id="basket">
-              <label for="basket">Корзина</label>
+            <input type="checkbox" name="basket" id="basket">
+            <label for="basket">Корзина</label>
           </fieldset>
           <input type="submit" class="btn btn-gray" value="Показать">
         </form>
       </div>
       <div class="index-content-right">
         <div class="catalog-sorting">
-          <span>Сортировать:</span>
-          <span class="sorting-criteria">по цене</span>
-          <a class="sorting-criteria" href="#">по типу</a>
-          <a class="sorting-criteria" href="#">по названию</a>
-          <div class="up-down">
+          <span class="heading">Сортировать:</span>
+          <div class="sorting-criteria">
+            <span class="sorting-criterion">по цене</span>
+            <a class="sorting-criterion" href="#">по типу</a>
+            <a class="sorting-criterion" href="#">по названию</a>
             <span class="arrow-down active"></span>
             <span class="arrow-up"></span>
           </div>
@@ -102,7 +102,7 @@
           <div class="catalog-item">
             <img src="http://placehold.it/150x200" alt="Sedona" width="150" height="200">
             <div class="description">
-              <a class="description-title" href="#">Sedona</a> <!--Здесь должно открываться модальное окно с демонстрацией товара-->
+              <a class="description-title" href="#">Sedona</a> 
               <div class="description-text">Информационный сайт для туристов</div>
               <a class="btn btn-red" href="#">9900 руб.</a>
             </div>
@@ -149,7 +149,7 @@
           </div>
         </div>
         <div class="paginator">
-          <span class="btn btn-gray">1</span>
+          <a class="btn btn-gray active">1</a>
           <a class="btn btn-gray" href="#">2</a>
           <a class="btn btn-gray" href="#">3</a>
           <a class="btn btn-gray" href="#">Следующая</a>
@@ -160,16 +160,16 @@
          <div class="container">
            <section class="map-and-contacts">
              <div class="map-image" id="map-image">
-               <img src="http://placehold.it/1000x400" alt="Карта" width="1000" height="400"> <!--Как подключать карту через script?-->
+               <img src="http://placehold.it/1000x400" alt="Карта" width="1000" height="400">
              </div>
              <div class="contacts">
-               <p><b>NЁRDS DESIGN STUDIO</b></p>
+               <h4 class="heading">NЁRDS DESIGN STUDIO</h4>
                <p>191186, Санкт-Петербург,<br>
                ул. Б. Конюшенная, д. 19/8</p>
                <p>тел. +7 (812) 275-75-75</p>
-               <a class="btn btn-red #feedback" href="#">Напишите нам</a>
+               <a class="btn btn-red" href="#">Напишите нам</a>
              </div>
-             <div class="overlay" title="feedback"> <!--Не знаю, как правильно делать модальное окно и кнопку его закрытия-->
+             <div class="overlay"> 
                <div class="popup">
                <button class="close" title="Закрыть"></button>
                <p>Напишите нам</p>
@@ -195,8 +195,8 @@
              <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
             </section>
             <div class="footer-text">
-              <p><b>Давайте дружить, это выгодно!</b></p>
-              <p>Скидка 10% для друзей из социальных сетей.</p>
+              <p class="cooperation">Давайте дружить, это выгодно!</p>
+              <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
             </div>
          </div>
        </footer>
