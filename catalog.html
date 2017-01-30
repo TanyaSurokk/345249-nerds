@@ -6,8 +6,8 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
-      <div class="container">
+    <header class="catalog-page-header">
+      <div class="container clearfix">
         <nav class="nav-menu">
           <div class="header-logo">
             <a class="main-logo" href="index.html">
@@ -28,18 +28,18 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <div class="basket-block">
-            <a class="basket" href="#">Корзина</a>
-          </div>
         </nav>
+        <div class="basket-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
         <div class="header-title">
           Магазин готовых шаблонов
         </div>
       </div>
     </header>
-    <main class="container">
-      <div class="index-content-left">
-        <form action="#" method="post">
+    <main class="container clearfix">
+      <div class="catalog-content-left">
+        <form action="#" method="get">
           <fieldset class="filter-price">
             <legend class="heading">Стоимость:</legend>
             <div class="range"> 
@@ -87,9 +87,9 @@
           <input type="submit" class="btn btn-gray" value="Показать">
         </form>
       </div>
-      <div class="index-content-right">
+      <div class="catalog-content-right">
         <div class="catalog-sorting">
-          <span class="heading">Сортировать:</span>
+          <span class="heading to-sort">Сортировать:</span>
           <div class="sorting-criteria">
             <span class="sorting-criterion">по цене</span>
             <a class="sorting-criterion" href="#">по типу</a>
@@ -98,7 +98,7 @@
             <span class="arrow-up"></span>
           </div>
         </div>
-        <div class="catalog-items">
+        <div class="catalog-items clearfix">
           <div class="catalog-item">
             <img src="img/sedona.jpg" alt="Sedona" width="360" height="616">
             <div class="description">
