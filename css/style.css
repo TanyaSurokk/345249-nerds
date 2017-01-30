@@ -1,16 +1,9 @@
 body {
-	font-family: "Roboto Regular", "Arial", sans-serif;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px;
 	font-weight: normal;
 	color: #283136;
 	line-height: 24px;
-}
-
-h1 {
-    font-size: 45px;
-    font-weight: bold;
-    color: #000000;
-    line-height: 45px;
 }
 
 h2 {
@@ -26,18 +19,280 @@ h4 {
 	font-weight: bold;
 	color: #000000;
 	line-height: 24px;
+	text-transform: uppercase;
 }
 
-h4.slider-name {
-	font-size: 55px;
-	font-weight: bold;
+.about-us-lead {
+	font-size: 45px;
 	color: #000000;
-	line-height: 55px;
+	line-height: 45px;
+	font-weight: 500;
+}
+
+.header-title {
+	font-size: 55px;
+	color: #000000;
+	line-height: 45px;
+	font-weight: 500;
+	text-align: center;
+	padding-bottom: 115px;
+	min-height: 225px;
 }
 
 .heading {
 	font-size: 18px;
+	line-height: 30px;
+	text-transform: uppercase;
 	font-weight: bold;
 	color: #000000;
-	line-height: 18px;
+}
+
+.clearfix::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.slider-name {
+	font-size: 55px;
+	color: #000000;
+	line-height: 55px;
+	text-transform: none;
+	font-weight: 500;
+}
+
+.page-header {
+	margin-bottom: 80px;
+	background-color: #eeeeee;
+}
+
+.catalog-page-header {
+	margin-bottom: 57px;
+	background-color: #eeeeee;
+}
+
+.container {
+	width: 1160px;
+	padding: 0 20px;
+	margin: 0 auto;
+}
+
+.nav-menu {
+    min-height: 133px;
+    width: 980px;
+    float: left;
+}
+
+.basket-block {
+	min-height: 133px;
+	width: 160px;
+	float: right;
+}
+
+.slider {
+    float: left;
+	position: relative;
+}
+
+.slider input[type=radio] {
+	display: none;
+}
+
+.slider-inner {
+	overflow: hidden;
+}
+
+.slider-slides {
+	width: 300%;
+	transition: transform 0.8s ease;
+}
+
+.slider-text {
+	float: left;
+} 
+
+.current-slide {
+	float: left;
+	width: 1200px;
+	min-height: 430px;
+    background-image: url("../img/slider1.png");
+    background-position: 444px 0px;
+    background-repeat: no-repeat;
+}
+
+.slide2 {
+	float: left;
+	width: 1200px;
+	min-height: 430px;
+	background-image: url("../img/slider2.png");
+    background-position: 444px 0px;
+    background-repeat: no-repeat;
+}
+
+.slide3 {
+	float: left;
+	width: 1200px;
+	min-height: 430px;
+	background-image: url("../img/slider3.png");
+    background-position: 444px 0px;
+    background-repeat: no-repeat;
+}
+
+.slider-controls {
+	text-align: center;
+	line-height: 10px;
+}
+
+.slider-controls label {
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    margin: 0 3px;
+    background-color: rgb(255, 255, 255);
+    border: 3px solid white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.8);
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+#slide-1:checked ~ .slider-controls label[for="slide-1"],
+#slide-2:checked ~ .slider-controls label[for="slide-2"],
+#slide-3:checked ~ .slider-controls label[for="slide-3"] {
+    background-color: #666666;
+}
+
+#slide-1:checked ~ .slider-inner .slider-slides {
+    transform: translate(0);
+}
+
+#slide-2:checked ~ .slider-inner .slider-slides {
+    transform: translate(-1200px);
+}
+
+#slide-3:checked ~ .slider-inner .slider-slides {
+    transform: translate(-2400px);
+}
+
+.features {
+	margin-bottom: 80px;
+}
+
+.features-item {
+	float: left;
+	width: 300px;
+	min-height: 353px;
+	margin-right: 100px;
+}
+
+.features-item:last-child {
+	margin-right: 60px;
+}
+
+.index-content {
+    padding-top: 73px;
+    padding-bottom: 75px;
+    min-height: 529px;
+}
+
+.index-content-left {
+	float: left;
+	width: 660px;
+}
+
+.index-content-right {
+	float: right;
+	width: 360px;
+}
+
+.partners-row {
+    min-height: 184px;
+    text-align: center;
+    margin-bottom: 81px;
+}
+
+.partner {
+	width: 260px;
+	float: left;
+	margin-right: 40px;
+}
+
+.partner:last-child {
+	margin-right: 0;
+}
+
+.coordinates {
+	background: url("../img/map-marker.png") 50% 50% no-repeat;
+	background-size: auto auto;
+	padding-top: 54px;
+}
+
+.contacts {
+	width: 320px;	
+	background-color: #ffffff;
+	margin-left: 76px;
+	text-align: center;
+}
+
+.page-footer {
+	padding-top: 69px;
+	padding-bottom: 70px;
+}
+
+.footer-social {
+	float: left;
+	width: 260px;
+}
+
+.footer-text {
+	float: right;
+	width: 560px;
+	text-align: left;
+	margin-right: 200px;
+}
+
+.catalog-content-left {
+	float: left;
+	width: 260px;
+	min-height: 780px;
+	margin-right: 140px;
+}
+
+.catalog-sorting {
+	margin-bottom: 55px;
+	margin-left: 140px;
+}
+
+.to-sort {
+	width: 160px;
+	margin-right: 240px;
+}
+
+.sorting-criteria {
+	float: right;
+}
+
+.catalog-items {
+	font-size: 0px;
+	margin-left: 400px;
+}
+
+.catalog-item {
+	position: relative;
+    display: inline-block;
+    width: 360px;
+    min-height: 617px;
+    margin-right: 40px;
+    margin-bottom: 36px;
+    vertical-align: top;
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.catalog-item:nth-child(2n) {
+	margin-right: 0;
+}
+
+.paginator {
+    margin-left: 400px;
 }
