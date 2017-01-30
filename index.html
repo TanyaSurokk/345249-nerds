@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="container">
+      <div class="container clearfix">
         <nav class="nav-menu">
           <div class="header-logo">
             <a class="main-logo">
@@ -28,46 +28,49 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-          <div class="basket-block">
-            <a class="basket" href="#">Корзина</a>
-          </div>
         </nav>
+        <div class="basket-block">
+          <a class="basket" href="#">Корзина</a>
+        </div>
         <div class="slider"> 
-
           <input id="slide-1" type="radio" name="slide" value="slide-1" checked>
-          <label for="slide-1"></label>
-          <div class="current-slide">
-            <div class="slider-text">
-              <h4 class="slider-name">Долго, дорого, скурпулезно.</h4>
-              <p class="slider-caption">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p> 
-              <a class="btn btn-red" href="#">Узнать больше</a>
-            </div>
-          </div>
- 
           <input id="slide-2" type="radio" name="slide" value="slide-2">
-          <label for="slide-2"></label>
-          <div class="slide2">
-            <div class="slider-text">
-              <h4 class="slider-name">Любим математику, как никто другой</h4>
-              <p class="slider-caption">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a class="btn btn-red" href="#">Узнать больше</a>
-            </div>
-          </div>
-
           <input id="slide-3" type="radio" name="slide" value="slide-3">
-          <label for="slide-3"></label>
-          <div class="slide3">
-            <div class="slide-text">
-              <h4 class="slider-name">Только ночь, только хардкор</h4>
-              <p class="slide-caption">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a class="btn btn-red" href="#">Узнать больше</a>
+          <div class="slider-controls">
+            <label for="slide-1"></label>
+            <label for="slide-2"></label>
+            <label for="slide-3"></label>
+          </div>
+          <div class="slider-inner">
+            <div class="slider-slides">
+              <div class="current-slide">
+                <div class="slider-text">
+                  <h4 class="slider-name">Долго, дорого, скурпулезно.</h4>
+                  <p class="slider-caption">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                  <a class="btn btn-red" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide2">
+                <div class="slider-text">
+                  <h4 class="slider-name">Любим математику, как никто другой</h4>
+                  <p class="slider-caption">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                  <a class="btn btn-red" href="#">Узнать больше</a>
+                </div>
+              </div>
+              <div class="slide3">
+                <div class="slider-text">
+                  <h4 class="slider-name">Только ночь, только хардкор</h4>
+                  <p class="slide-caption">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                  <a class="btn btn-red" href="#">Узнать больше</a>
+               </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </header>
     <main class="container">
-      <section class="features">
+      <section class="features clearfix">
         <div class="features-item">
           <img src="img/feature-item-red.png" width="300" height="146" alt="Веб-сайты">
           <h2 class="features-name">Веб-сайты</h2>
@@ -87,9 +90,9 @@
           <a class="btn btn-yellow" href="#">Заказать</a>
         </div>
       </section>
-      <div class="index-content">
+      <div class="index-content clearfix">
         <div class="index-content-left">
-          <h1 class="about-us">Мы - маленькая, но гордая дизайн-студия из Краснодара</h1>
+          <p class="about-us-lead"><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p class="our-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <div class="orders-list">
             <h4>Выполняем заказы на разработку:</h4>
@@ -99,7 +102,7 @@
               <li>Слайдшоу и видео для корпоративных презентаций</li>
             </ul>
           </div>
-         </div>
+        </div>
         <div class="index-content-right">
           <div class="Nerds-logo">
             <img src="img/logo-nerds.jpg" alt="Nёrd's logo" width="360" height="208">
@@ -118,74 +121,72 @@
               <div class="percent">50<sup>%</sup></div>
               <div class="advantage-name">Минимальная предоплата</div>
             </li>
-           </ul> 
-         </div>
-         <div class="partners-row">
-           <div class="partner">
-             <a class="partner" href="#">
-               <img src="img/partner-logo1.png" alt="HTMLAcademy" width="199" height="68">
-             </a>
-           </div>
-           <div class="partner">
-             <a class="partner" href="#">
-               <img src="img/partner-logo2.png" alt="Barbershop Borodinski" width="209" height="90">
-             </a>
-           </div>
-           <div class="partner">
-             <a class="partner" href="#">
-               <img src="img/partner-logo3.png" alt="Pink" width="185" height="52">
-             </a>
-           </div>
-           <div class="partner">
-             <a class="partner" href="#">
-               <img src="img/partner-logo4.png" alt="Mishka" width="173" height="84">
-             </a>
-           </div>
-         </div>
-       </main>
-       <footer class="page-footer">
-         <div class="container">
-           <section class="coordinates">
-             <div class="map-image" id="map-image">
-               <img src="img/map-marker.png" alt="Карта" width="1440" height="416">
-             </div>
-             <div class="contacts">
-               <span>NЁRDS DESIGN STUDIO</span>
-               <p>191186, Санкт-Петербург,<br>
-               ул. Б. Конюшенная, д. 19/8</p>
-               <p>тел. +7 (812) 275-75-75</p>
-               <a class="btn btn-red" href="#">Напишите нам</a>
-             </div>
-             <div class="overlay"> 
-               <div class="popup">
-                 <button class="close" title="Закрыть"></button>
-                 <p>Напишите нам</p>
-                 <form action="#" method="post"> 
-                   <div class="half-width">
-                     <label for="your-name">Ваше имя:</label>
-                     <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
-                   </div>
-                   <div class="half-width">
-                     <label for="email">Ваш email:</label>
-                     <input type="text" name="email" id="email" placeholder="Для отправки ответа">
-                   </div>
-                   <label for="text">Текст письма:</label>
-                   <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
-                   <input class="btn btn-red" type="submit" value="Отправить">
-                 </form>
-               </div>
-             </div>
-           </section>
-           <section class="footer-social">
-             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-             <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
-            </section>
-            <div class="footer-text">
-              <p class="cooperation">Давайте дружить, это выгодно!</p>
-              <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
-            </div>
-         </div>
-       </footer>
+          </ul> 
+        </div>
+      </div>
+      <div class="partners-row clearfix">
+        <div class="partner">
+          <a class="partner-site" href="#">
+            <img src="img/partner-logo1.png" alt="HTMLAcademy" width="199" height="68">
+          </a>
+        </div>
+        <div class="partner">
+          <a class="partner-site" href="#">
+            <img src="img/partner-logo2.png" alt="Barbershop Borodinski" width="209" height="90">
+          </a>
+        </div>
+        <div class="partner">
+          <a class="partner-site" href="#">
+            <img src="img/partner-logo3.png" alt="Pink" width="185" height="52">
+          </a>
+        </div>
+        <div class="partner">
+          <a class="partner-site" href="#">
+            <img src="img/partner-logo4.png" alt="Mishka" width="173" height="84">
+          </a>
+        </div>
+      </div>
+    </main>
+    <section class="coordinates">
+      <div class="contacts">
+        <span>NЁRDS DESIGN STUDIO</span>
+        <p>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8</p>
+        <p>тел. +7 (812) 275-75-75</p>
+        <a class="btn btn-red" href="#">Напишите нам</a>
+      </div>
+      <div class="overlay"> 
+      <div class="popup">
+        <button class="close" title="Закрыть"></button>
+        <p>Напишите нам</p>
+        <form action="#" method="post"> 
+          <div class="half-width">
+            <label for="your-name">Ваше имя:</label>
+            <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="half-width">
+            <label for="email">Ваш email:</label>
+            <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+          </div>
+          <label for="text">Текст письма:</label>
+          <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
+          <input class="btn btn-red" type="submit" value="Отправить">
+        </form>
+      </div>
+      </div>
+    </section>
+    <footer class="page-footer">
+      <div class="container clearfix">
+        <section class="footer-social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
+        </section>
+        <div class="footer-text">
+          <p class="cooperation">Давайте дружить, это выгодно!</p>
+          <p class="discount">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
