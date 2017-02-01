@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Nёrd's</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -45,21 +46,21 @@
             <div class="slider-slides">
               <div class="current-slide">
                 <div class="slider-text">
-                  <h4 class="slider-name">Долго, дорого, скурпулезно.</h4>
+                  <p class="slider-name">Долго, дорого, скурпулезно.</p>
                   <p class="slider-caption">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
                   <a class="btn btn-red" href="#">Узнать больше</a>
                 </div>
               </div>
               <div class="slide2">
                 <div class="slider-text">
-                  <h4 class="slider-name">Любим математику, как никто другой</h4>
+                  <p class="slider-name">Любим математику, как никто другой</p>
                   <p class="slider-caption">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                   <a class="btn btn-red" href="#">Узнать больше</a>
                 </div>
               </div>
               <div class="slide3">
                 <div class="slider-text">
-                  <h4 class="slider-name">Только ночь, только хардкор</h4>
+                  <p class="slider-name">Только ночь, только хардкор</p>
                   <p class="slide-caption">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
                   <a class="btn btn-red" href="#">Узнать больше</a>
                </div>
@@ -92,10 +93,10 @@
       </section>
       <div class="index-content clearfix">
         <div class="index-content-left">
-          <p class="about-us-lead"><b>Мы - маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p class="about-us-lead">Мы - маленькая, но гордая дизайн-студия из Краснодара.</p>
           <p class="our-principles">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <div class="orders-list">
-            <h4>Выполняем заказы на разработку:</h4>
+            <p class="lead-phrase">Выполняем заказы на разработку:</p>
             <ul class="orders-list-items">
               <li>Веб-сайтов любой сложности</li>
               <li>Мобильных приложений для IOS и Android</li>
@@ -107,7 +108,7 @@
           <div class="Nerds-logo">
             <img src="img/logo-nerds.jpg" alt="Nёrd's logo" width="360" height="208">
           </div>
-          <h4>С 2004 года любим точность во всем:</h4>
+          <p class="lead-phrase">С 2004 года любим точность во всем:</p>
           <ul class="advantages"> 
             <li>
               <div class="percent">146<sup>%</sup></div>
@@ -125,58 +126,53 @@
         </div>
       </div>
       <div class="partners-row clearfix">
-        <div class="partner">
-          <a class="partner-site" href="#">
-            <img src="img/partner-logo1.png" alt="HTMLAcademy" width="199" height="68">
-          </a>
-        </div>
-        <div class="partner">
-          <a class="partner-site" href="#">
-            <img src="img/partner-logo2.png" alt="Barbershop Borodinski" width="209" height="90">
-          </a>
-        </div>
-        <div class="partner">
-          <a class="partner-site" href="#">
-            <img src="img/partner-logo3.png" alt="Pink" width="185" height="52">
-          </a>
-        </div>
-        <div class="partner">
-          <a class="partner-site" href="#">
-            <img src="img/partner-logo4.png" alt="Mishka" width="173" height="84">
-          </a>
-        </div>
+        <a class="partner" href="#">
+          <img src="img/partner-logo1.png" alt="HTMLAcademy" width="199" height="68">
+        </a>
+        <a class="partner" href="#">
+          <img src="img/partner-logo2.png" alt="Barbershop Borodinski" width="209" height="90">
+        </a>
+        <a class="partner" href="#">
+          <img src="img/partner-logo3.png" alt="Pink" width="185" height="52">
+        </a>
+        <a class="partner" href="#">
+          <img src="img/partner-logo4.png" alt="Mishka" width="173" height="84">
+        </a>
       </div>
     </main>
-    <section class="coordinates">
-      <div class="contacts">
-        <span>NЁRDS DESIGN STUDIO</span>
-        <p>191186, Санкт-Петербург,<br>
-        ул. Б. Конюшенная, д. 19/8</p>
-        <p>тел. +7 (812) 275-75-75</p>
-        <a class="btn btn-red" href="#">Напишите нам</a>
-      </div>
-      <div class="overlay"> 
-      <div class="popup">
-        <button class="close" title="Закрыть"></button>
-        <p>Напишите нам</p>
-        <form action="#" method="post"> 
-          <div class="half-width">
-            <label for="your-name">Ваше имя:</label>
-            <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
-          </div>
-          <div class="half-width">
-            <label for="email">Ваш email:</label>
-            <input type="text" name="email" id="email" placeholder="Для отправки ответа">
-          </div>
-          <label for="text">Текст письма:</label>
-          <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
-          <input class="btn btn-red" type="submit" value="Отправить">
-        </form>
-      </div>
-      </div>
-    </section>
     <footer class="page-footer">
       <div class="container clearfix">
+        <section class="coordinates">
+          <div class="map-image" id="map-image">
+            <img src="img/map-marker.png" alt="Карта" width="1440" height="416" class="img-map">
+          </div>
+          <div class="contacts">
+            <span>NЁRDS DESIGN STUDIO</span>
+            <p>191186, Санкт-Петербург,<br>
+            ул. Б. Конюшенная, д. 19/8</p>
+            <p>тел. +7 (812) 275-75-75</p>
+            <a class="btn btn-red" href="#">Напишите нам</a>
+          </div>
+          <div class="overlay"> 
+            <div class="popup">
+            <button class="close" title="Закрыть"></button>
+            <p>Напишите нам</p>
+            <form action="#" method="post"> 
+              <div class="half-width">
+                <label for="your-name">Ваше имя:</label>
+                <input type="text" name="your-name" id="your-name" placeholder="Представьтесь, пожалуйста">
+              </div>
+              <div class="half-width">
+                <label for="email">Ваш email:</label>
+                <input type="text" name="email" id="email" placeholder="Для отправки ответа">
+              </div>
+              <label for="text">Текст письма:</label>
+              <textarea name="text" id="text" placeholder="В свободной форме"></textarea>
+              <input class="btn btn-red" type="submit" value="Отправить">
+            </form>
+          </div>
+          </div>
+        </section>
         <section class="footer-social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
