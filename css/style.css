@@ -4,6 +4,8 @@ body {
 	font-weight: normal;
 	color: #283136;
 	line-height: 24px;
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
@@ -14,7 +16,7 @@ h2 {
     text-transform: uppercase;
 }
 
-h4 {
+.lead-phrase {
 	font-size: 16px;
 	font-weight: bold;
 	color: #000000;
@@ -36,7 +38,6 @@ h4 {
 	font-weight: 500;
 	text-align: center;
 	padding-bottom: 115px;
-	min-height: 225px;
 }
 
 .heading {
@@ -77,10 +78,17 @@ h4 {
 	margin: 0 auto;
 }
 
-.nav-menu {
+.header-logo {
+   width: 160px;
+   float: left;
+   margin-right: 200px;
+}
+
+.main-menu {
     min-height: 133px;
-    width: 980px;
+    width: 620px;
     float: left;
+    padding: 0;
 }
 
 .basket-block {
@@ -197,7 +205,7 @@ h4 {
 
 .index-content-left {
 	float: left;
-	width: 660px;
+	width: 780px;
 }
 
 .index-content-right {
@@ -215,16 +223,25 @@ h4 {
 	width: 260px;
 	float: left;
 	margin-right: 40px;
+	display: block;
+	text-decoration: none;
 }
 
 .partner:last-child {
 	margin-right: 0;
 }
 
+.page-footer {
+	padding-top: 69px;
+	padding-bottom: 70px;
+}
+
 .coordinates {
-	background: url("../img/map-marker.png") 50% 50% no-repeat;
-	background-size: auto auto;
-	padding-top: 54px;
+    width: 100%;
+}
+
+.img-map {
+	width: 100%;
 }
 
 .contacts {
@@ -234,54 +251,48 @@ h4 {
 	text-align: center;
 }
 
-.page-footer {
-	padding-top: 69px;
-	padding-bottom: 70px;
-}
-
 .footer-social {
 	float: left;
-	width: 260px;
+	width: 400px;
 }
 
 .footer-text {
 	float: right;
-	width: 560px;
+	width: 760px;
 	text-align: left;
-	margin-right: 200px;
 }
 
 .catalog-content-left {
 	float: left;
 	width: 260px;
-	min-height: 780px;
-	margin-right: 140px;
+}
+
+.catalog-content-right {
+	float: right;
+	width: 760px;
 }
 
 .catalog-sorting {
 	margin-bottom: 55px;
-	margin-left: 140px;
 }
 
 .to-sort {
 	width: 160px;
-	margin-right: 240px;
+	float: left;
 }
 
 .sorting-criteria {
-	float: right;
+    float: right;
 }
 
 .catalog-items {
 	font-size: 0px;
-	margin-left: 400px;
 }
 
 .catalog-item {
 	position: relative;
     display: inline-block;
     width: 360px;
-    min-height: 617px;
     margin-right: 40px;
     margin-bottom: 36px;
     vertical-align: top;
@@ -291,8 +302,4 @@ h4 {
 
 .catalog-item:nth-child(2n) {
 	margin-right: 0;
-}
-
-.paginator {
-    margin-left: 400px;
 }
