@@ -183,7 +183,8 @@ h2 {
 }
 
 .features {
-	margin-bottom: 80px;
+	padding-bottom: 80px;
+	border-bottom: 3px solid #eeeeee;
 }
 
 .features-item {
@@ -201,6 +202,7 @@ h2 {
     padding-top: 73px;
     padding-bottom: 75px;
     min-height: 529px;
+    border-bottom: 3px solid #eeeeee;
 }
 
 .index-content-left {
@@ -217,6 +219,7 @@ h2 {
     min-height: 184px;
     text-align: center;
     margin-bottom: 81px;
+    border-bottom: 3px solid #eeeeee;
 }
 
 .partner {
@@ -227,8 +230,25 @@ h2 {
 	text-decoration: none;
 }
 
+.partner:nth-child(1) {
+	margin-top: 62px;
+	margin-bottom: 50px;
+}
+
+.partner:nth-child(2) {
+	margin-top: 46px;
+	margin-bottom: 44px;
+}
+
+.partner:nth-child(3) {
+	margin-top: 65px;
+	margin-bottom: 63px;
+}
+
 .partner:last-child {
 	margin-right: 0;
+	margin-top: 52px;
+	margin-bottom: 44px;
 }
 
 .page-footer {
