@@ -3,7 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин готовых шаблонов</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -59,31 +60,45 @@
           </fieldset>
           <fieldset class="filter-box">
             <legend class="heading">Сетка:</legend>
-            <input type="radio" name="filter1" value="adaptive" id="adaptive" checked>
-            <label for="adaptive">Адаптивная</label>
-
-            <input type="radio" name="filter1" value="fixed" id="fixed">
-            <label for="fixed">Фиксированная</label>
-
-            <input type="radio" name="filter1" value="rubber" id="rubber">
-            <label for="rubber">Резиновая</label>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="radio" name="filter1" value="adaptive" id="adaptive" checked>
+                <label for="adaptive">Адаптивная</label>
+              </li>
+              <li class="filter-item">
+                <input type="radio" name="filter1" value="fixed" id="fixed">
+                <label for="fixed">Фиксированная</label>
+              </li>
+              <li class="filter-item">
+                <input type="radio" name="filter1" value="rubber" id="rubber">
+                <label for="rubber">Резиновая</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset class="filter-box">
             <legend class="heading">Особенности:</legend>
-            <input type="checkbox" name="slider" id="slider" checked>
-            <label for="slider">Слайдер</label>
-
-            <input type="checkbox" name="advantages" id="advantages">
-            <label for="advantages">Блок преимуществ</label>
-
-            <input type="checkbox" name="news" id="news" checked>
-            <label for="news">Новости</label>
-
-            <input type="checkbox" name="gallery" id="gallery">
-            <label for="gallery">Галерея</label>
-
-            <input type="checkbox" name="basket" id="basket">
-            <label for="basket">Корзина</label>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" name="slider" id="slider" checked>
+                <label for="slider">Слайдер</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="advantages" id="advantages">
+                <label for="advantages">Блок преимуществ</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="news" id="news" checked>
+                <label for="news">Новости</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="gallery" id="gallery">
+                <label for="gallery">Галерея</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" name="basket" id="basket">
+                <label for="basket">Корзина</label>
+              </li>
+            </ul>
           </fieldset>
           <input type="submit" class="btn btn-gray" value="Показать">
         </form>
@@ -92,7 +107,7 @@
         <div class="catalog-sorting">
           <span class="heading to-sort">Сортировать:</span>
           <div class="sorting-criteria">
-            <span class="sorting-criterion">по цене</span>
+            <a class="sorting-criterion active">по цене</a>
             <a class="sorting-criterion" href="#">по типу</a>
             <a class="sorting-criterion" href="#">по названию</a>
             <span class="arrow-down active"></span>
@@ -193,7 +208,7 @@
           <section class="footer-social">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-fb" href="#">Инстаграм</a>
+            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </section>
           <div class="footer-text">
             <p class="cooperation">Давайте дружить, это выгодно!</p>
