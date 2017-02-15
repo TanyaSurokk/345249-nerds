@@ -976,9 +976,7 @@ body {
 .map-image {
     width: 100%;
     height: 416px;
-    background: url("../img/map-marker.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #eeeeee url("../img/map-marker.png") no-repeat center;
 }
 
 iframe {
