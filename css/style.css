@@ -246,7 +246,7 @@ body {
 	width: 1200px;
 	min-height: 430px;
     background-image: url("../img/slider1.png");
-    background-position: 431px 17px;
+    background-position: bottom 0 right 70px;
     background-repeat: no-repeat;
 }
 
@@ -255,7 +255,7 @@ body {
 	width: 1200px;
 	min-height: 430px;
 	background-image: url("../img/slider2.png");
-    background-position: 495px 0px;
+    background-position: bottom 0 right 41px;
     background-repeat: no-repeat;
 }
 
@@ -264,7 +264,7 @@ body {
 	width: 1200px;
 	min-height: 430px;
 	background-image: url("../img/slider3.png");
-    background-position: 400px 18px;
+    background-position: bottom 0 right 41px;
     background-repeat: no-repeat;
 }
 
@@ -345,9 +345,10 @@ body {
   opacity: 0.5;
  }
 
-.slider-slides .btn {
+.slider-slides .btn-red {
       padding: 16px 53px;
       padding-right: 55px;
+      margin-bottom: 80px;
 }
 
 .features {
